@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소하상업지구 음식점 고르기</title>
+    <!-- Tailwind CSS 링크 -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- 커스텀 스타일 시트 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-blue-400 to-purple-600 h-screen flex flex-col justify-center items-center">
+    <div class="container mx-auto py-12 bg-white shadow-lg rounded-lg px-8 py-10">
+        <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">소하상업지구 음식점 고르기</h1>
+        <div class="flex justify-center items-center space-x-4 mb-8">
+            <label class="inline-flex items-center">
+                <input type="radio" name="foodType" value="rice" checked class="form-radio text-blue-500">
+                <span class="ml-2 text-gray-800">밥</span>
+            </label>
+            <label class="inline-flex items-center">
+                <input type="radio" name="foodType" value="noodles" class="form-radio text-blue-500">
+                <span class="ml-2 text-gray-800">면</span>
+            </label>
+            <label class="inline-flex items-center">
+                <input type="radio" name="foodType" value="snack" class="form-radio text-blue-500">
+                <span class="ml-2 text-gray-800">분식</span>
+            </label>
+            <label class="inline-flex items-center">
+                <input type="radio" name="foodType" value="fastfood" class="form-radio text-blue-500">
+                <span class="ml-2 text-gray-800">패스트푸드</span>
+            </label>
+            <label class="inline-flex items-center">
+                <input type="radio" name="foodType" value="random" class="form-radio text-blue-500">
+                <span class="ml-2 text-gray-800">무작위</span>
+            </label>
+        </div>
+        <button id="randomButton" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-full shadow-md transition duration-300">추첨하기</button>
+        <p id="result" class="mt-8 text-2xl font-semibold text-center text-gray-800"></p>
+    </div>
+
+    <!-- 사용자 정의 스크립트 -->
+    <script src="script.js"></script>
+</body>
+</html>
